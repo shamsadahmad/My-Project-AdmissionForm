@@ -1,0 +1,17 @@
+
+<suite name="RegrationTesting" paraller="tests">
+  <test thread-count="5" name="TestRunner1">
+  	<Listeners> 
+  		<Listener class="com.edu.OnlineAddmissionSystem.genericutility.LisImpClass.class"/>
+  	</Listeners>
+  	
+    <classes>
+      <class name="com.edu.AdmissionFormTest.TestOurAllTestScript"/>
+      <class name="com.edu.AdmissionFormTest.POM_VerifyIncomeParents"/>
+	  <class name="com.edu.AdmissionFormTest.POM_VerifyFatherOccupation"/> 
+	  <class name="com.edu.AdmissionFormTest.POM_VerifyPin"/>
+      <class name="com.edu.AdmissionFormTest.VerifyFatherNameWith_POM"/> 
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- RegrationTesting -->

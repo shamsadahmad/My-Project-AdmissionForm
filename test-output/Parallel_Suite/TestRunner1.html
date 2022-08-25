@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>TestNG:  TestRunner1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestRunner1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Aug 22 16:43:38 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (255 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.Booking.bookingTest()'><b>bookingTest</b><br>Test class: org.SDET.PreacticeWIthTestNG.Booking<br>Parameters: BANGALORE, SRI NAGAR, 9</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.Booking@2d52216b</td></tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.CreateOrgTest.closeWindow()'><b>closeWindow</b><br>Test class: org.SDET.PreacticeWIthTestNG.CreateOrgTest</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.CreateOrgTest@4145bad8</td></tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.CustomerPriority.createCustomerTest()'><b>createCustomerTest</b><br>Test class: org.SDET.PreacticeWIthTestNG.CustomerPriority</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.CustomerPriority@61001b64</td></tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.CreateOrgTest.configBC()'><b>configBC</b><br>Test class: org.SDET.PreacticeWIthTestNG.CreateOrgTest</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.CreateOrgTest@4145bad8</td></tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.CustomerPriority.deleteCustomerTest()'><b>deleteCustomerTest</b><br>Test class: org.SDET.PreacticeWIthTestNG.CustomerPriority</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.CustomerPriority@61001b64</td></tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.CustomerDependency.deleteCustomerTest()'><b>deleteCustomerTest</b><br>Test class: org.SDET.PreacticeWIthTestNG.CustomerDependency</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.CustomerDependency@771a660</td></tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.CreateOrgTest.createOrgwithValidDocument()'><b>createOrgwithValidDocument</b><br>Test class: org.SDET.PreacticeWIthTestNG.CreateOrgTest</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.CreateOrgTest@4145bad8</td></tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.Booking.bookingTest()'><b>bookingTest</b><br>Test class: org.SDET.PreacticeWIthTestNG.Booking<br>Parameters: Bangalore, Mumbai, 5</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.Booking@2d52216b</td></tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.CustomerPriority.modifyCustomerTest()'><b>modifyCustomerTest</b><br>Test class: org.SDET.PreacticeWIthTestNG.CustomerPriority</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.CustomerPriority@61001b64</td></tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.Booking.bookingTest()'><b>bookingTest</b><br>Test class: org.SDET.PreacticeWIthTestNG.Booking<br>Parameters: Bangalore, Patna, 10</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.Booking@2d52216b</td></tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.Booking.bookingTest()'><b>bookingTest</b><br>Test class: org.SDET.PreacticeWIthTestNG.Booking<br>Parameters: BANGALORE, Kolkata, 5</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.Booking@2d52216b</td></tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.CreateOrgTest.close()'><b>close</b><br>Test class: org.SDET.PreacticeWIthTestNG.CreateOrgTest</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.CreateOrgTest@4145bad8</td></tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.CreateOrgTest.configureAM()'><b>configureAM</b><br>Test class: org.SDET.PreacticeWIthTestNG.CreateOrgTest</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.CreateOrgTest@4145bad8</td></tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.CreateOrgTest.createOrgTest()'><b>createOrgTest</b><br>Test class: org.SDET.PreacticeWIthTestNG.CreateOrgTest</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.CreateOrgTest@4145bad8</td></tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.CustomerDependency.modifyCustomerTest()'><b>modifyCustomerTest</b><br>Test class: org.SDET.PreacticeWIthTestNG.CustomerDependency</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.CustomerDependency@771a660</td></tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.Booking.bookingTest()'><b>bookingTest</b><br>Test class: org.SDET.PreacticeWIthTestNG.Booking<br>Parameters: Bangalore, Ranchi, 8</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.Booking@2d52216b</td></tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.Booking.bookingTest()'><b>bookingTest</b><br>Test class: org.SDET.PreacticeWIthTestNG.Booking<br>Parameters: Bangalore, Bhopal, 6</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.Booking@2d52216b</td></tr>
+<tr>
+<td title='org.SDET.PreacticeWIthTestNG.Booking.bookingTest()'><b>bookingTest</b><br>Test class: org.SDET.PreacticeWIthTestNG.Booking<br>Parameters: BANGALORE, Jammu & Kasmir, 7</td>
+<td></td>
+<td>0</td>
+<td>org.SDET.PreacticeWIthTestNG.Booking@2d52216b</td></tr>
+</table><p>
+</body>
+</html>

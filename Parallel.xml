@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Parallel_Suite">
+  <test thread-count="4" parallel="tests" name="TestRunner1">
+  	<parameter name="BROWSER" value="chrome"></parameter>
+    <classes>
+      <class name="org.SDET.PreacticeWIthTestNG.CustomerPriority"/>
+      <class name="org.SDET.PreacticeWIthTestNG.CustomerDependency"/>
+      <class name="org.SDET.PreacticeWIthTestNG.Booking"/>
+      <class name="org.SDET.PreacticeWIthTestNG.CreateOrgTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="4" parallel="tests" name="TestRunner2">
+  	<parameter name="BROWSER" value="fireFox"></parameter>
+    <classes>
+     <class name="org.SDET.PreacticeWIthTestNG.CreateOrgTest"/>
+      <class name="org.SDET.PreacticeWIthTestNG.CustomerPriority"/>
+      <class name="org.SDET.PreacticeWIthTestNG.CustomerDependency"/>
+      <class name="org.SDET.PreacticeWIthTestNG.Booking"/>
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Parallel_Suite -->

@@ -1,0 +1,17 @@
+
+<suite name="Full_Regration">
+	<groups>
+		<run>
+			<include name = "Smoke_Testing">
+			</include>
+		</run>
+	</groups>
+  <test thread-count="4" name="Test">
+    <classes>
+      <class name="org.SDET.PreacticeWIthTestNG.CustomerPriority"/>
+      <class name="org.SDET.PreacticeWIthTestNG.CustomerDependency"/>
+      <class name="org.SDET.PreacticeWIthTestNG.Booking"/>
+      <class name="org.SDET.PreacticeWIthTestNG.CustomerInvocationCount"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Full_Regration -->
